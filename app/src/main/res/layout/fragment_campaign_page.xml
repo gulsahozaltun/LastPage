@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="discAdapter"
+            type="com.example.sharebook.adapter.PagerAdapter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        tools:context=".fragment.CampaignPageFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tool_bg"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/tool_camp"
+                android:textColor="@color/light_black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="13dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adapter="@{discAdapter}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+<!--
+<me.relex.circleindicator.CircleIndicator3
+android:id="@+id/indicator"
+android:layout_width="0dp"
+android:layout_height="50dp"
+android:background="@color/light_orange"
+app:ci_height="5dp"
+app:ci_margin="5dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/viewPagerr">        </me.relex.circleindicator.CircleIndicator3>-->

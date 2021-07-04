@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.sharebook.fragment.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_mainPageFragment2"
+            app:destination="@id/mainPageFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+        <action
+            android:id="@+id/customer_profil_action"
+            app:destination="@id/profilFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_mainPageFragment3"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.sharebook.fragment.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.sharebook.fragment.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/bookDetailAction"
+            app:destination="@id/bookDetailFragment" />
+        <argument
+            android:name="customerArgument"
+            app:argType="com.example.sharebook.entity.Customers" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.sharebook.fragment.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <argument
+            android:name="customerArg"
+            app:argType="com.example.sharebook.entity.Customers" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookShareFragment"
+        android:name="com.example.sharebook.fragment.BookShareFragment"
+        android:label="BookShareFragment" />
+    <fragment
+        android:id="@+id/bookDetailFragment"
+        android:name="com.example.sharebook.fragment.BookDetailFragment"
+        android:label="BookDetailFragment" >
+        <argument
+            android:name="bookArg"
+            app:argType="com.example.sharebook.entity.Books" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartPageFragment"
+        android:name="com.example.sharebook.fragment.CartPageFragment"
+        android:label="CartPageFragment" />
+    <fragment
+        android:id="@+id/campaignPageFragment"
+        android:name="com.example.sharebook.fragment.CampaignPageFragment"
+        android:label="CampaignPageFragment" >
+        <action
+            android:id="@+id/campaigntoDetail"
+            app:destination="@id/bookDetailFragment" />
+    </fragment>
+</navigation>

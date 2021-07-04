@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">sharebook</string>
+    <string name="main_page_intro">Kalbinize dokunacak sizden gelen romanlar</string>
+    <string name="hello_blank_fragment">bos sayfa</string>
+    <string name="novel_text">Romanlar</string>
+    <string name="cart_price_text">Fiyat:</string>
+    <string name="cart_button">Sepete Ekle</string>
+    <string name="chip_about">Hakkında</string>
+    <string name="chip_author">Son Sayfa Notu</string>
+    <string name="tool_detail_text">DetaySayfasi</string>
+    <string name="card_caart_text">Sepetiniz boş! Alışverişe devam edin</string>
+    <string name="cart_text">Sepetiniz:</string>
+    <string name="sign_text">Giriş Yap</string>
+    <string name="log_bt">Giriş Yap</string>
+    <string name="sign_up_text">Kayıt Ol</string>
+    <string name="register_bt">Kayıt Ol</string>
+    <string name="detaid_bt_text">Detay Sayfası</string>
+    <string name="discount_text">Yerine sadece:</string>
+    <string name="tool_camp">Günün Yıldızları</string>
+    <string name="tool_profil">Profil</string>
+    <string name="tool_cart">Sepetiniz</string>
+    <string name="validate_toast">Yanlış mail veya şifre girdiniz. lütfen tekrar deneyiniz!</string>
+    <string name="toast_pay">Alışveriş için teşekkürler!</string>
+    <string name="toast_cart_add">Ürün sepete eklendi!</string>
+    <string name="toas_exist">Ürün zaten sepette!</string>
+    <string name="toast_delete">Ürün sepetten çıkartıldı!</string>
+    <string name="card_cart_full">Harika seçim, bır sonraki aşamaya geçerek alışverişi sonlandırabilirsin!</string>
+    <string name="cart_full_message">Harika seçim, bır sonraki aşamaya geçerek alışverişi sonlandırabilirsin!</string>
+    <string name="validate_blank">Alanlar boş bırakılamaz!</string>
+    <string name="register_success">Başarılı!</string>
+    <string name="name_surname">Ad Soyad</string>
+    <string name="app_title">Last Page</string>
+    <string name="mail">Mail Hesabı</string>
+    <string name="phone">Telefon Numarası</string>
+</resources>
